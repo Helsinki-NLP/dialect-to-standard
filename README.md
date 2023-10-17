@@ -1,11 +1,12 @@
-# Dialect-to-standard
-Dialect-to-standard benchmark dataset and processing scripts.
+# Dialect-to-Standard
+Dialect-to-Standard dataset comprising Finnish, Norwegian, Slovene, and Swiss German dialects.
 
 ## Original corpora
 When using the data, the original corpora must be referenced.
 
 ### SKN
 The original data is downloadable here: https://korp.csc.fi/download/SKN/skn-vrt/
+Citation instructions: https://www.kielipankki.fi/viittaus/?key=skn-vrt&lang=en
 
 Following preprocessing steps are executed on the original data:
 - Selecting the basic transcriptions instead of detailed ones.
@@ -14,6 +15,7 @@ Following preprocessing steps are executed on the original data:
 
 ### NDC
 We utilize the word-aligned version of the data, detailed here: https://github.com/Helsinki-NLP/ndc-aligned
+Citation instructions: https://tekstlab.uio.no/nota/NorDiaSyn/english/index.html
 
 Following preprocessing steps are executed:
 - Removing punctuation and pause markers.
@@ -30,6 +32,7 @@ Following preprocessing steps are executed:
 
 ### GOS
 The original data is downloadable here: https://www.clarin.si/repository/xmlui/handle/11356/1438
+Citation instructions: http://eng.slovenscina.eu/korpusi/gos
 
 Following preprocessing steps are executed:
 - Only using the data from a filtered set of speakers (in 'filtered-speakers.csv').
