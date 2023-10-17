@@ -28,7 +28,7 @@ Following preprocessing steps are executed:
 The original data is downloadable here: https://spur.uzh.ch/en/departments/research/textgroup/ArchiMob.html
 
 Following preprocessing steps are executed:
-- Only using the six manually normalized files.
+- Only using the six manually normalized files (IDs 1007, 1048, 1063, 1143, 1198, 1270).
 - Substituting name tags with capital X.
 - Excluding utterances that consist only of filler words (['ja', 'nein', 'und', 'so', 'mh', 'aha', 'jaja', 'ha-a', 'he-e', 'heh', 'äääh', 'oh', 'ah', 'X']).
 
@@ -45,8 +45,8 @@ Following preprocessing steps are executed:
 - Excluding utterances that consist only of filler words (['eee', 'eem', 'mhm', 'aha', 'ja', 'ne', 'X']).
 
 ## Splits
-All datasets have split 1. Each file is split 80 % to training, 10 % to development and 10 % to test set. The difference between 1a, 1b and 1c is a different seed for random selection and shuffling.
+All datasets have split 1. Each file is split 80 % of **utterances** to training, 10 % to development and 10 % to test set. The difference between 1a, 1b and 1c is a different seed for random selection and shuffling.
 
 SKN and NDC also have splits 2 and 3. 
-In split 2, 80 % of speakers are in training, 10 % in development and 10 % in test set. Each location is presented in the training. The speakers in each set are assigned at random, but ensuring minimal overlap between 2a, 2b and 2c.
-In split 3, 80 % of locations are in training, 10 % in development and 10 % in test set. The locations in each set are assigned at random so that they do not overlap between 3a, 3b and 3c.
+In split 2, 80 % of **speakers** are in training, 10 % in development and 10 % in test set. Each location is presented in the training. The speakers in each set are assigned at random, but ensuring minimal overlap between 2a, 2b and 2c.
+In split 3, 80 % of **locations** are in training, 10 % in development and 10 % in test set. The locations in each set are assigned at random so that they do not overlap between 3a, 3b and 3c.
