@@ -1,5 +1,8 @@
-# Dialect-to-Standard
-Dialect-to-Standard dataset comprising Finnish, Norwegian, Slovene, and Swiss German dialects.
+# Dialect-to-Standard Normalization: A Large-Scale Multilingual Evaluation
+
+## Dialect-to-Standard Normalization Dataset for Four Languages
+
+Dialect-to-standard normalization dataset comprising Finnish, Norwegian, Slovene, and Swiss German dialects.
 
 ## Original corpora
 When using the data, the original corpora must be referenced.
