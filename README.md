@@ -1,7 +1,5 @@
 # Dialect-to-Standard Normalization: A Large-Scale Multilingual Evaluation
 
-## Dialect-to-Standard Normalization Dataset for Four Languages
-
 Dialect-to-standard normalization dataset comprising Finnish, Norwegian, Slovene, and Swiss German dialects.
 
 ## Original corpora
@@ -50,6 +48,13 @@ Following preprocessing steps are executed:
 ## Splits
 All datasets have split 1. Each file is split 80 % of **utterances** to training, 10 % to development and 10 % to test set. The difference between 1a, 1b and 1c is a different seed for random selection and shuffling.
 
-SKN and NDC also have splits 2 and 3. 
+SKN and NDC also have splits 2 and 3.
+
 In split 2, 80 % of **speakers** are in training, 10 % in development and 10 % in test set. Each location is presented in the training. The speakers in each set are assigned at random, but ensuring minimal overlap between 2a, 2b and 2c.
+
 In split 3, 80 % of **locations** are in training, 10 % in development and 10 % in test set. The locations in each set are assigned at random so that they do not overlap between 3a, 3b and 3c.
+
+
+## Normalization experiments
+
+The directories `scripts`, `processed_data` and `models` contain the relevant data for the experiments reported in the paper.
