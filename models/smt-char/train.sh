@@ -14,11 +14,6 @@ set -e
 module use -a /projappl/nlpl/software/modules/etc/
 
 for LG in archimob1; do
-	echo $LG "Data"
-	mkdir -p $LG
-	python3 ../scripts/convert_sent.py --twt-data ../data/$LG/train.norm --mode train_lm --outprefix $LG/train
-	python3 ../scripts/convert_sent.py --twt-data ../data/$LG/dev.norm --mode dev --outprefix $LG/dev
-
 	module load nlpl-efmaral
 	echo $LG "Alignment (eflomal)"
 	align_eflomal.py -s $LG/train.src -t $LG/train.tgt -f $LG/train.fwd -r $LG/train.rev

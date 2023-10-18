@@ -14,9 +14,6 @@ module load pytorch
 
 for LG in ndc2a ndc3a; do
 	mkdir $LG
-	python3 ../../scripts/convert_csv.py ../../data/$LG/train.norm $LG/train.csv
-	python3 ../../scripts/convert_csv.py ../../data/$LG/dev.norm $LG/dev.csv
-	python3 ../../scripts/convert_csv.py ../../data/$LG/test.norm $LG/test.csv
 	cut -f 1 $LG/dev.csv > $LG/dev.src
 	cut -f 1 $LG/test.csv > $LG/test.src
 	sed -i '1d' $LG/dev.src
