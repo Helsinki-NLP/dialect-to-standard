@@ -1,0 +1,46 @@
+data:
+    train:
+        path_src: ../data/LG/train_unigram2000.src
+        path_tgt: ../data/LG/train_unigram2000.tgt
+    valid:
+        path_src: ../data/LG/dev_unigram2000.src
+        path_tgt: ../data/LG/dev_unigram2000.tgt
+
+save_data: LG/data
+save_model: LG/model
+src_vocab: LG/vocab
+
+share_vocab: true
+src_seq_length: 1000
+tgt_seq_length: 1000
+src_words_min_frequency: 5
+tgt_words_min_frequency: 5
+overwrite: False
+
+world_size: 1
+gpu_ranks: [0]
+
+save_checkpoint_steps: 500
+seed: 8244
+train_steps: 50000
+valid_steps: 500
+early_stopping: 10
+early_stopping_criteria: accuracy
+
+encoder_type: brnn
+decoder_type: rnn
+word_vec_size: 512
+rnn_size: 512
+layers: 2
+
+optim: adagrad
+learning_rate: 0.5
+adagrad_accumulator_init: 0.1
+max_grad_norm: 2
+batch_size: 10000
+batch_type: tokens
+dropout: 0.1
+
+copy_attn: 'true'
+global_attention: mlp
+reuse_copy_attn: 'true'
