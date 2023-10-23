@@ -10,7 +10,7 @@
 
 `evaluate.sh` uses a variety of scripts to produce the different scores and baseline results:
 - [sacrebleu](https://github.com/mjpost/sacrebleu) is used to obtain chrF scores.
-- [`wer++.py`](https://github.com/nsmartinez/WERpp) is used to obtain WER and CER scores.
+- `wer++.py` (from [here](https://github.com/nsmartinez/WERpp)) is used to obtain WER and CER scores.
 - `align.py` re-aligns the predictions with the source to produce verticalized files with one source word per row.
 - `normEval.py` (from the [MultiLexNorm project](https://bitbucket.org/robvanderg/multilexnorm)) provides word-level accuracy, error reduction rate and LAI baseline scores.
 - `baseline.py` (from the [MultiLexNorm project](https://bitbucket.org/robvanderg/multilexnorm)) is used to produce the MFR baseline.
